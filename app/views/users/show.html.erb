@@ -1,0 +1,28 @@
+<h2>Social Karma Stars</h2>
+
+<%= form_for @user do |f| %>
+
+	<div>
+		<h3>NAME</h3>
+	<%= @user.name %>
+</div>
+
+	<div>
+		<h3>USERNAME</h3>
+		<%= @user.username %>
+	</div>
+
+	<div>
+		<h3>EMAIL</h3>
+		<%= @user.email %>
+	</div>
+
+	<div>
+		<h3>RATING</h3>
+		<%= @user.rating %>
+	</div>
+
+
+	<% end %>
+
+	<%=button_to "Back", {:controller => 'users', :action => 'index'}, {:method => :get} %>

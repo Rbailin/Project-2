@@ -1,0 +1,33 @@
+<h1>Trustees!</h1>
+<table>
+	<thead>
+		<tr>
+			<th><strong>NAME</strong></th>
+			<th>USERNAME</th>
+			<th>EMAIL</th>
+			<th>RATING</th>
+		</tr>
+	</thead>
+	<tbody> 
+		<% @users.each do |user| %>
+			<tr>
+				<td><%= user.name %></td>
+				<td><%= user.username %></td>
+				<td><%= user.email %></td>
+				<td><%= user.rating %></td>
+				<td><%= link_to 'Edit', edit_user_path(user), action: 'edit' %></td>
+				<td><%= link_to 'Delete', user_path(user), method: :delete %></td>
+				<td><%= link_to 'Show', user_path(user) %></td>
+
+			</tr>
+
+		<% end %>
+	</tbody>
+</table>
+
+
+<%=link_to 'Sign Up', users_new_path, {class: "btn btn-large btn-primary"} %>
+<%=link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
+<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
+
+<%= current_user ? current_user.name : "You are not logged in" %>
