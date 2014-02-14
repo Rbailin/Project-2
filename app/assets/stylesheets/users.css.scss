@@ -6,102 +6,92 @@
 
 @import 'bootstrap';
 
-html, body {
-	margin-top: 26px;
-	background-color: #DDDAD6;
-}
-
 body.homepage {
  background-color: #DDDAD6;
-
 }
 
-html, body, .container-fluid, .row, .col-md-12{
+html, body, .container-fluid, .row {
 	height: 100%;
+	background-color: #154d8f;
+	position: relative;
 }
 
 
-.navbar {
+.overlay {
+	background-color: #F04C40 ;
+	height: 700px;
+	width: 1000px;
+	margin-right: 400px;
+	margin-top: 140px;
 
-	background-color: #9932CC;
-	bottom: 50px;
 }
 
+
+
+.navbar-brand 
+{
+	font-size: 50px;
+	margin: 30px;
+	color: #8D2663;
+}
 
 .btn {
-	background-color: #F0F03C;
-}
+	
+	padding: 40px;
+ 	float: right;
+ 	/*left: 400px;*/
+ 	margin: 10px;
+ 	/*height: 50px;
+ 	width: 50px;*/
+ 	/*text-align: center;
+ 	text-decoration: */
+ 	border: 1px solid black;
 
-
-.carousel-control.right {
-	top: 110px;
-	height: 390px;
-	width: 100px;
-	background-color: #9932CC;
-}
-
-.carousel-control.left {
-	top: 110px;
-	height: 390px;
-	width: 100px;
-	background-color: #9932CC;
 
 }
 
+.btn-info {
+	background-color: #154d8f;
+	border: none;
+	border: 1px solid black;
 
-.carousel-slide {
-height: 300px;
-margin: 0 auto;
-width: 300px;
-background-color: #DDDAD6;
 }
 
-.carousel-inner
-{
-height: 390px;
-margin: 0 auto;
-position: relative;
+.btn-info:hover {
+	background-color: #168A8F;
 }
 
-.img-thumbnail{
-	min-height: 375px;
-	max-height: 375px;
-	min-width: 500px;
-	max-width: 500px;
-	margin: 0 auto;
+.btn-success {
+	background-color: #F04C40;
+	border: none;
+	border: 1px solid black;
+
 }
 
-.carousel-caption
-{
-  text-align:left;
-  background:#111;
-  opacity:0;
-  transition:opacity 0.3s;
-  padding:20px;
-  border-radius:20px 20px 0 0;
-  bottom:8px;
-}
-.item.active:hover > .carousel-caption
-{
-  opacity:0.8;
+.btn-success:hover {
+	background-color: #168A8F;
 }
 
-.navbar-brand
-{
-	text-decoration: bold;
+div.row {
+	background-color: white;
+	width: 1200px;
+	height: 150px;
 }
 
 
-.transbox
-  {
-  max-width:1000px;
-  height:1000px;
-  margin: 0 auto;
-  background-color:#ffffff;
-  border:1px solid black;
-  background: rgba(255,255,255,.6);
-  position: relative;
-  border-radius: 50px;
-  top: 90px;
-  }
+.form-group {
+	height: 200px;
+	width: 200px;
+	top: 150px;
+	right: 150px;
+}
 
+.signup {
+	margin: 200px;
+}
+
+
+.login {
+	margin: 400px;
+	right: 400px;
+}
