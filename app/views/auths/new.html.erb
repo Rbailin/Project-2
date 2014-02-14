@@ -1,10 +1,15 @@
-	<div class="login"></div>
+	
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6 login">
 	<h1>Log In</h1>
 	<%= form_for @user, {url: "/auths", method:"post"} do |user|%>
-	<%= user.text_field :username, :placeholder => "Your username" %><br>
-	<%= user.password_field :password, :placeholder => "Your password" %><br>
-	<%= user.submit "Log In" %>
+	<%= user.text_field :username, :placeholder => "Your username", class: "form-control" %><br>
+	<%= user.password_field :password, :placeholder => "Your password", class: "form-control" %><br>
+	<%= user.submit "Log In", class: "btn btn-info" %>
 	<%end%>
-
+	</div>
+	<div class="cold-md-3"></div>
+	</div>
 
 	

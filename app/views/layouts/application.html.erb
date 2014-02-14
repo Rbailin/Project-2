@@ -7,25 +7,59 @@
     <%= csrf_meta_tags %>
   </head>
       <body>
+        <div class="overlay"></div>
         <div class ="container-fluid">
-         <div class="row">
+         <div class="row above">
+            <div class="col-md-2">
+                <%=link_to "Karma", root_path, class: "navbar-brand" %>
+            </div>
+            <div class="col-md-5"></div>
 
-  <header>
-    <%=link_to "Karma", root_path, class: "navbar-brand" %>
-  <nav>
-    <%= current_user ? "Hello #{current_user.name}" : link_to('Sign Up', users_new_path, {class: "btn btn-large btn-success"}) %>
-	 <% if current_user %>
-				<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-large btn-primary"} %>
+            <!-- <div class="col-md-3"> -->
+                <%= current_user ? "Hello #{current_user.name}" : link_to('Sign Up', users_new_path, {class: "btn btn-large btn-success col-md-2"}) %>
+            <!-- </div> -->
+
+            <!-- div class="col-md-3"> -->
+              <% if current_user %>
+                <%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-large btn-primary col-md-2"} %>
+              <% else %>
+                <%= link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-info col-md-2"} %>
+              <% end %>
+          <!--   </div> -->
+              <div class="col-md-1 greybkg"></div>
+            </div>
+          
+              <%= yield %>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--   <header>
+ -->    <%#=link_to "Karma", root_path, class: "navbar-brand" %>
+    <%#= current_user ? "Hello #{current_user.name}" : link_to('Sign Up', users_new_path, {class: "btn btn-large btn-success top-btns"}) %>
+<!-- 	 <% if current_user %>
+				<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-large btn-primary top-btns"} %>
     <% else %>
-				<%= link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-info"} %>
-	 <% end %>
-</header>
-  
-  <%= yield %>
+				<%= link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-info top-btns"} %>
+	 <% end %> -->
+<!--   </header>
+ -->  
+ <!--  <%= yield %>
    
 </div>
 
 <div class="overlay"></div>
 
 </body>
-</html>
+</html> -->

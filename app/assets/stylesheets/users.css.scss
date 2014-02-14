@@ -6,26 +6,26 @@
 
 @import 'bootstrap';
 
-body.homepage {
- background-color: #DDDAD6;
+body {
+ background-color: #154d8f;
 }
 
-html, body, .container-fluid, .row {
+/*html, body, .container-fluid, .row {
 	height: 100%;
 	background-color: #154d8f;
 	position: relative;
 }
-
+*/
 
 .overlay {
 	background-color: #F04C40 ;
 	height: 700px;
 	width: 1000px;
-	margin-right: 400px;
-	margin-top: 140px;
+	position: absolute;
+	z-index: -1;
+	top: 200px;
 
 }
-
 
 
 .navbar-brand 
@@ -35,25 +35,29 @@ html, body, .container-fluid, .row {
 	color: #8D2663;
 }
 
-.btn {
+
+
+
+/*.btn {
 	
-	padding: 40px;
- 	float: right;
+	/*padding: 40px;*/
+ 	/*float: right;
  	/*left: 400px;*/
- 	margin: 10px;
+ 	/*margin: 10px;*/
  	/*height: 50px;
  	width: 50px;*/
  	/*text-align: center;
- 	text-decoration: */
+ 	text-decoration: 
  	border: 1px solid black;
 
-
-}
+*/
+/*}*/
 
 .btn-info {
 	background-color: #154d8f;
 	border: none;
 	border: 1px solid black;
+
 
 }
 
@@ -72,26 +76,25 @@ html, body, .container-fluid, .row {
 	background-color: #168A8F;
 }
 
-div.row {
+.above {
 	background-color: white;
-	width: 1200px;
-	height: 150px;
+	height: 200px;
 }
 
 
-.form-group {
+/*.form-group {
 	height: 200px;
 	width: 200px;
 	top: 150px;
 	right: 150px;
 }
-
+*/
 .signup {
 	margin: 200px;
 }
 
 
-.login {
+/*.login {
 	margin: 400px;
 	right: 400px;
-}
+}*/
