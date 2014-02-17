@@ -7,6 +7,9 @@
 	<%= user.text_field :username, :placeholder => "Your username", class: "form-control" %><br>
 	<%= user.password_field :password, :placeholder => "Your password", class: "form-control" %><br>
 	<%= user.submit "Log In", class: "btn btn-info" %>
+
+		<p class="script"><%= flash[:notice] %></p>
+
 	<%end%>
 	</div>
 	<div class="cold-md-3"></div>

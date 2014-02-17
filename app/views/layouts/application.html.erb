@@ -8,29 +8,36 @@
   </head>
       <body>
         <div class="overlay"></div>
+        <div class="row">
         <div class ="container-fluid">
          <div class="row above">
             <div class="col-md-2">
                 <%=link_to "Karma", root_path, class: "navbar-brand" %>
             </div>
-            <div class="col-md-5"></div>
+            <div class="col-md-2"></div>
 
             <!-- <div class="col-md-3"> -->
                 <%= current_user ? "Hello #{current_user.name}" : link_to('Sign Up', users_new_path, {class: "btn btn-large btn-success col-md-2"}) %>
+
+            <div class = "col-md-1"></div>
             <!-- </div> -->
 
             <!-- div class="col-md-3"> -->
               <% if current_user %>
-                <%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-large btn-primary col-md-2"} %>
+                <%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-large btn-primary col-md-2 out"} %>
               <% else %>
                 <%= link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-info col-md-2"} %>
               <% end %>
           <!--   </div> -->
-              <div class="col-md-1 greybkg"></div>
-            </div>
-          
-              <%= yield %>
+              <div class="col-md-1"></div>
+
+              <div class="col-md-2 greybkg"></div>
+           </div>
+      </div>
 </div>
+
+              <%= yield %>
+
 
 
 </body>

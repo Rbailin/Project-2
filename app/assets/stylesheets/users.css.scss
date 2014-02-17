@@ -19,12 +19,17 @@ body {
 
 .overlay {
 	background-color: #F04C40 ;
-	height: 700px;
+	height: 1600px;
 	width: 1000px;
 	position: absolute;
 	z-index: -1;
-	top: 200px;
+	top: 300px;
+}
 
+.front {
+	background-color: white; 
+	height: 200px;
+	width: 200px;
 }
 
 
@@ -36,27 +41,19 @@ body {
 }
 
 
+.greybkg {
+	background-color: #154d8f;
+	height: 200px;
+}
 
 
-/*.btn {
-	
-	/*padding: 40px;*/
- 	/*float: right;
- 	/*left: 400px;*/
- 	/*margin: 10px;*/
- 	/*height: 50px;
- 	width: 50px;*/
- 	/*text-align: center;
- 	text-decoration: 
- 	border: 1px solid black;
-
-*/
-/*}*/
 
 .btn-info {
-	background-color: #154d8f;
-	border: none;
-	border: 1px solid black;
+	background-color: #F04C40;
+	border: 2px solid black;
+	top: 20px;
+	padding: 10px;
+
 
 
 }
@@ -66,9 +63,10 @@ body {
 }
 
 .btn-success {
-	background-color: #F04C40;
-	border: none;
-	border: 1px solid black;
+	background-color: #154d8f;
+	top: 20px;
+	border: 2px solid black;
+	padding: 10px;
 
 }
 
@@ -78,7 +76,7 @@ body {
 
 .above {
 	background-color: white;
-	height: 200px;
+	height: 150px;
 }
 
 
@@ -91,10 +89,31 @@ body {
 */
 .signup {
 	margin: 200px;
+	width: 200px;
+}
+
+.login {
+	top: 200px;
+	left: -100px;
+
+}
+
+.table-hover {
+	top: 400px;
+	width: 500px;
+	margin: 100px;
+}
+
+.out {
+	left: 500px;
 }
 
 
-/*.login {
-	margin: 400px;
-	right: 400px;
-}*/
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+p {
+	font-family: Sanchez;
+}
+				

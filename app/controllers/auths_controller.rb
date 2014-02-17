@@ -12,9 +12,9 @@ class AuthsController < ApplicationController
 		user = User.find_by(username: params[:user][:username])
 		if user && user.authenticated?(params[:user][:password])
 			session[:user_id] = user.id
-			flash[:notice] = "Password not Correct"
 			redirect_to users_path
 		else
+			flash[:notice] = "You are not logged in! I bet you're sad."
 			redirect_to new_auth_path
 		end
 	end

@@ -1,3 +1,90 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.Dan {
+	margin: 50px auto;
+	text-align: center;
+	top: 60px;
+	left: 90px;
+
+ }
+
+ .Jay {
+
+ 	margin: 50px auto;
+	text-align: center;
+	top: 60px;
+	left: 200px;
+
+
+ }
+
+
+ .Tyson {
+ 	margin: 50px auto;
+	text-align: center;
+	top: 560px;
+	left: -540px;
+
+ }
+
+
+ .Cage {
+	margin: 50px auto;
+	text-align: center;
+	top: 500px;
+	left: -430px;
+
+ }
+
+ .Bieber {
+ 	margin: 50px auto;
+ 	text-align: center;
+ 	left: -430px;
+ 	top: 400px;
+ }
+
+ .signup {
+	width: 300px;
+ }
+
+ .info, .image{
+    position:absolute;
+    -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
+    
+}
+
+.info{padding:10px;
+    width: 160px;
+    height: 160px;
+  z-index: -2;
+  -webkit-transform: rotateY(180deg);   
+  background-color: rgba(255,255,255,0.8);
+    
+}
+
+.image{
+    z-index: -1;   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);   
+}
+
+.rotator{
+     
+     width:160px;   
+    height: 160px;
+}
+
+.rotator .info{
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+    z-index: -1;
+    -webkit-transform: rotateY(0deg);   
+
+}
+.rotator  .image{
+    -webkit-transform: rotateY(180deg);   
+    -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;;
+    z-index: -2;
+}
